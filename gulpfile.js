@@ -17,8 +17,8 @@ var paths = {
   scripts: {
     src: [
       'node_modules/jquery/dist/jquery.js',
-      'node_modules/bootstrap/dist/js/bootstrap.js',
       'node_modules/swiper/dist/js/swiper.js',
+      'node_modules/bootstrap/dist/js/bootstrap.js',
       'js/**/*.js'
     ],
     dest: 'public/javascripts'
@@ -51,8 +51,7 @@ gulp.task('styles', function () {
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(reload({ stream: true }));
+    .pipe(gulp.dest(paths.styles.dest));
 });
 
 gulp.task('styles-prod', function () {
@@ -62,12 +61,6 @@ gulp.task('styles-prod', function () {
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest(paths.styles.dest));
 });
-
-// gulp.task('browser-sync', function() {
-//   browserSync({
-//     proxy: "localhost:3000"
-//   });
-// });
 
 // Compile JavaScript
 gulp.task('scripts', function() {
@@ -112,6 +105,6 @@ gulp.task('watch', function () {
     });
 });
 
-gulp.task('default', ['styles', 'scripts', 'watch' /*, possible other tasks... */]);
-
 gulp.task('prod', ['styles-prod', 'scripts-prod']);
+
+gulp.task('default', ['styles', 'scripts', 'watch' /*, possible other tasks... */]);
