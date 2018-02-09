@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>alliance-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-205.000000, -76.000000)">
+        <g id="alliance-icon" transform="translate(205.000000, 76.000000)">
+            <circle id="Circle" fill="#FFFFFF" cx="65" cy="65" r="65"></circle>
+            <path d="M79.2644379,83.8505251 L90.1533501,83.8505251 L94.4818447,92.6895212 L83.8772396,92.6895212 L79.2644379,83.8505251 Z M35.5181553,92.6895212 L65.5202214,37.3104788 L84.9302401,74.0649484 L73.8470324,74.0649484 L65.5202214,58.4033931 L64.0797803,61.0394639 L46.7850842,92.6895212 L35.5181553,92.6895212 Z" id="Allioance-Icon" fill="#4A4A4A"></path>
+        </g>
+    </g>
+</svg>

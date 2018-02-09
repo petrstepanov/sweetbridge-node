@@ -3,15 +3,47 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "watch-sass": "gulp watch-sass"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
     "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
-  }
+    "query": "^0.2.0",
+    "serve-favicon": "~2.4.5",
+    "swiper": "^4.1.0"
+  },
+  "description": "Sweetbridge landing page (node.js)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrstepanov/sweetbridge-node.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "npm",
+    "gulp",
+    "bootstrap",
+    "sass",
+    "landing"
+  ],
+  "author": "Petr Stepanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petrstepanov/sweetbridge-node/issues"
+  },
+  "homepage": "https://github.com/petrstepanov/sweetbridge-node#readme"
 }

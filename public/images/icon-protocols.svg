@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>protocols-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-510.000000, -77.000000)">
+        <g id="protocols-icon" transform="translate(510.000000, 77.000000)">
+            <circle id="circle" fill="#FFFFFF" cx="65" cy="65" r="65"></circle>
+            <path d="M44,92 L44,64.1889186 C58.813349,64.1889186 68.8321603,64.1889186 74.0564341,64.1889186 C81.8928447,64.1889186 83.2632708,58.3914165 83.2632708,55.439216 C83.2632708,52.4870155 82.3978147,46.1535863 74.0564341,46.1535863 C68.4955137,46.1535863 61.6392082,46.1535863 53.4875176,46.1535863 L44.3825742,37 C57.5676557,37 67.6308225,37 74.5720745,37 C84.9839527,37 92.3199997,46.9047905 92.3199997,54.4621648 C92.3199997,62.019539 86.3689907,73.0455666 74.0564341,73.0455666 C65.848063,73.0455666 59.1334429,73.0455666 53.9125738,73.0455666 L53.9125738,92 L44,92 Z" id="protocol-path" fill="#4A4A4A"></path>
+        </g>
+    </g>
+</svg>

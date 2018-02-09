@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>contributors-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1142.000000, -77.000000)">
+        <g id="contributors-icon" transform="translate(1142.000000, 77.000000)">
+            <circle id="circle" fill="#FFFFFF" cx="65" cy="65" r="65"></circle>
+            <path d="M85.9964064,43.6401691 C81.2790251,38.9191048 76.5234333,35 65.7568287,35 C52.0820854,35 37,45.8770927 37,63.778466 C37,81.6798393 50.4680385,93.4040074 65.7568287,93.4040074 C69.8234045,93.4040074 73.3848041,92.6253732 76.4410276,91.0681049 C70.5977419,86.9195838 67.2606945,84.5110968 66.4298854,83.8426438 C57.8652165,83.8426438 47.1899643,77.2478245 47.1899643,64.6027227 C47.1899643,51.9576209 55.5898715,45.4545201 66.3381669,45.4545201 C71.737729,45.4545201 76.0662888,47.1773523 79.3238462,50.6230167 C82.8720486,46.9805925 85.0962353,44.6529766 85.9964064,43.6401691 Z" id="contributors-path" fill="#4A4A4A"></path>
+        </g>
+    </g>
+</svg>

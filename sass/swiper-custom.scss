@@ -1,0 +1,82 @@
+$gradient-start-color: rgba(0,0,0,0);
+$gradient-end-color:   rgba(0,0,0,0.65);
+
+.swiper-slide {
+  // display: inline-block;
+  overflow: hidden;
+  margin: 0 2rem 4rem 2rem;
+  // margin-bottom: 4rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+  position: relative;
+  background-color: $indigo;
+  height: 18rem;
+  width: 18rem;
+
+  &:after {
+    content: "\e906";
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    position: absolute;
+    font-size: $font-size-21;
+    left: 1.2rem;
+    top: 1.2rem;
+    color: black;
+    opacity: 0.15;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &.has-img {
+    background-color: white;
+    width: auto;
+
+    &:after {
+      content: "";
+    }
+
+    .swiper-slide-text {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+100&0+8,1+66 */
+      background: -moz-linear-gradient(top,  $gradient-start-color 1%, $gradient-start-color 8%, $gradient-end-color 66%, $gradient-end-color 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  $gradient-start-color 1%,$gradient-start-color 8%,$gradient-end-color 66%,$gradient-end-color 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  $gradient-start-color 1%,$gradient-start-color 8%,$gradient-end-color 66%,$gradient-end-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+  }
+
+  img {
+    height: 18rem;
+  }
+
+  .swiper-slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 3rem 1.5rem 1.2rem 1.5rem;
+
+    h5 {
+      font-family: $font-bold;
+    }
+
+    p {
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+
+      a {
+        color: white;
+        font-family: $font-bold;
+      }
+    }
+  }
+}
