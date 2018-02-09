@@ -10,8 +10,8 @@ var reload = browserSync.reload;
 
 var paths = {
   styles: {
-    src: 'sass/sweetbridge.scss',
-    srcWatch: '/scss/**/*.scss',
+    srcProcess: 'sass/sweetbridge.scss',
+    src: 'sass/**/*.scss',
     dest: 'public/stylesheets'
   },
   scripts: {
@@ -19,13 +19,17 @@ var paths = {
       'node_modules/jquery/dist/jquery.js',
       'node_modules/bootstrap/dist/js/bootstrap.js',
       'node_modules/swiper/dist/js/swiper.js',
-      'js/main.js'
+      'js/**/*.js'
     ],
-    srcWatch: '/js/**/*.js',
     dest: 'public/javascripts'
   },
   images: {
+    src: 'public/images/**/*.*',
     dest: 'public/images'
+  },
+  views: {
+    src: 'views/**/*.ejs',
+    dest: 'views'
   }
 };
 
@@ -42,7 +46,7 @@ var autoprefixerOptions = {
 
 gulp.task('styles', function () {
   return gulp
-    .src(paths.styles.src)
+    .src(paths.styles.srcProcess)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
@@ -53,7 +57,7 @@ gulp.task('styles', function () {
 
 gulp.task('styles-prod', function () {
   return gulp
-    .src(paths.styles.src)
+    .src(paths.styles.srcProcess)
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(gulp.dest(paths.styles.dest));
@@ -85,23 +89,24 @@ gulp.task('scripts-prod', function() {
 
 // Watch SASS and scripts change
 gulp.task('watch', function () {
-  browserSync.init({
+  browserSync({
     // ghostMode: { scroll: false },
     // notify: false,
     // open: false,
-    proxy: 'localhost:3000'//,
+    proxy: 'localhost:3000',//,
     // port: 3000
-    // files: [
-    //   paths.styles.dest + '/**/*.css',
-    //   paths.scripts.dest + '/**/*.js',
-    //   paths.images.dest
-    // ]
+    files: [
+      paths.styles.dest + '/**/*.css',
+      paths.scripts.dest + '/**/*.js',
+      paths.images.dest + '/**/*.*',
+      paths.views.dest + '/*.ejs'
+    ]
   });
-  gulp.watch(paths.styles.srcWatch, ['styles'])
+  gulp.watch(paths.styles.src, ['styles'])
     .on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
-  gulp.watch(paths.scripts.srcWatch, ['scripts'])
+  gulp.watch(paths.scripts.src, ['scripts'])
     .on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });

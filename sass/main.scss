@@ -57,14 +57,14 @@ strong {
 }
 
 .section-handshake {
-  background-image: url(../img/background-hand.jpg);
+  background-image: url('/images/background-hand.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .section-papers {
-  background-image: url(../img/background-papers.jpg);
+  background-image: url('/images/background-papers.jpg');
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: 350% bottom;
@@ -186,7 +186,7 @@ strong {
   background-repeat: no-repeat;
   min-height: 14rem;
   color: white;
-  background-image: url(./../img/background-bridge.jpg);
+  background-image: url('/images/background-bridge.jpg');
   background-position: center top;
   background-size: cover;
 
